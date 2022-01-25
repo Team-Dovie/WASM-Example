@@ -1,0 +1,28 @@
+{
+  "name": "quick-start",
+  "version": "0.0.1",
+  "description": "Simple example for testing assembly script",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests",
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Dovie/WASM-Example.git"
+  },
+  "author": "Sangho Ahn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Team-Dovie/WASM-Example/issues"
+  },
+  "homepage": "https://github.com/Team-Dovie/WASM-Example#readme",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.19.22"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.19.22"
+  }
+}
